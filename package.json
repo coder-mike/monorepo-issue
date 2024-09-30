@@ -1,0 +1,12 @@
+{
+  "workspaces": [
+    "packages/a",
+    "packages/b"
+  ],
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "name": "b",
+  "main": "dist/src/index.js",
+  "dependencies": {
+    "@types/node": "^22.7.4"
+  }
+}
