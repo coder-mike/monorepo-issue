@@ -3,12 +3,6 @@
     "target": "ES2022",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "outDir": "./dist",
-    "strict": true,
-    "esModuleInterop": true,
-    "sourceMap": true,
-    "declaration": true,
-    "noImplicitAny": true,
     "rootDirs": [
       "./packages/a/src",
       "./packages/b/src"
