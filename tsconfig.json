@@ -4,13 +4,13 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "rootDirs": [
-      "./packages/a/src",
-      "./packages/b/src"
+      "./packages/client/src",
+      "./packages/server/src"
     ]
   },
   "references": [
-    { "path": "./packages/a" },
-    { "path": "./packages/b" }
+    { "path": "./packages/client" },
+    { "path": "./packages/server" }
   ],
   "include": [],
   "exclude": ["node_modules"]
