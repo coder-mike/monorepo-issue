@@ -14,7 +14,7 @@ The server [has this line of code](packages/server/src/index.ts):
 const timeout: NodeJS.Timeout = setTimeout(() => {}, 1000);
 ```
 
-The build fails because the type definition for `setTimeout` in the client is resolving to the node.js type definition (./node_modules/@types/node/timers.d.ts) rather than the browser type definition, despite the `"lib": ["ES2022", "DOM"]` line in the client's `tsconfig.json`.
+The build fails because the type definition for `setTimeout` in the client is resolving to the node.js type definition (./node_modules/@types/node/timers.d.ts) rather than the browser type definition, despite the `"lib": ["ES2022", "DOM"]` line in the client's `tsconfig.json`. The `./node_modules/@types` package exists because it's a devDependency of the server package, but because an `npm install` is installing it into the root `node_modules`, it's also visible to the client which is causing a conflict.
 
 
 ## Steps to reproduce
